@@ -12,8 +12,8 @@
          <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand">
-                    <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-9/96/420-512.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                    Notebook shop</a>
+                    <img src="https://i.ibb.co/sw8mLtM/2993669-brand-brands-commander-logo-logos-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Informatikai szolgáltatások</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,20 +34,20 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Jelentkezzen be, ha már tag!" sec:authorize="isAnonymous()" th:href="@{/login}" >Bejelentkezés</a>
+                            <a class="nav-link" href="Jelentkezzen be, ha már tag!" sec:authorize="isAnonymous()" th:href="@{/login}" >LOGIN</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Ha még nem tagunk!" sec:authorize="isAnonymous()" th:href="@{/regisztral}">Regisztráció</a>
+                            <a class="nav-link" href="Ha még nem tagunk!" sec:authorize="isAnonymous()" th:href="@{/regisztral}">REGISZTRÁLÁS</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Az oldal menedzselése adminként" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/home}">Oldal vezérlése</a>
+                            <a class="nav-link" href="Az oldal menedzselése adminként" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/home}">OLDAL BEÁLLÍTÁSOK</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Az oldal menedzselése adminként" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/messages}">Bejövő üzenetek</a>
+                            <a class="nav-link" href="Az oldal menedzselése adminként" sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/messages}">ÜZENETEK</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
                             </a>
                             <ul class="dropdown-menu">
 
-                                <li><a class="dropdown-item" href="#" sec:authorize="isAuthenticated()" th:href="@{/gepek}">Az összes Notebook specifikációért kattints ide.</a></li>
+                                <li><a class="dropdown-item" href="#" sec:authorize="isAuthenticated()" th:href="@{/gepek}">A VÁLASZTHATÓ CSOMAGOKÉRT kattints ide.</a></li>
 
 
                                 <li><a class="dropdown-item" href="#" sec:authorize="isAnonymous()" th:href="@{/login}">A menüpontok csak akkor elérhetőek, ha bejelentkeztél!</a></li>
@@ -65,11 +65,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" sec:authorize="isAuthenticated()" >Kedves <span sec:authentication="principal.username">User</span>, üdvözlünk újra köreinkben! :)</a>
+                            <a class="nav-link" sec:authorize="isAuthenticated()" >Kedves <span sec:authentication="principal.username">User</span>, üdvözöljük! :)</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="Kapcsi" sec:authorize="isAnonymous()" th:href="@{/contact}">Lépj velünk kapcsolatba!</a>
+                            <a class="nav-link" href="Kapcsi" sec:authorize="isAnonymous()" th:href="@{/contact}">SEGÍTSÉG</a>
                         </li>
 
                         <li class="nav-item">
